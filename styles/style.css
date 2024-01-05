@@ -3,3 +3,12 @@
 body {
     font-family: 'Pixelify Sans', sans-serif;
 }
+
+.cloverBtn {
+    background-image: url('./../assets/clover.jpg');
+    background-size: 40px 40px; 
+    background-repeat: no-repeat;
+    padding-left: 30px; 
+
+    height: 40px ;
+}
