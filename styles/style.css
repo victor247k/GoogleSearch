@@ -10,6 +10,7 @@
 
 :root {
   --search-bar-border: #000;
+  --search-buttons-bg: #fff;
 }
 
 body {
@@ -49,6 +50,20 @@ h1 {
   left: 20px;
   top: 7px;
   z-index: 1;
+}
+
+.aditional-search-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.aditional-search-buttons input {
+  background: var(--search-buttons-bg);
+  border: 1px solid var(--search-bar-border);
+  border-radius: 8px;
+  font-size: 1rem;
 }
 
 .links-section {
