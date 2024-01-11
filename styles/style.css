@@ -17,6 +17,17 @@
 
 body {
   font-family: 'Pixelify Sans', sans-serif;
+  line-height: 1.5;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+header nav {
+  padding: 28px 30px 0 0;
 }
 
 main {
@@ -24,42 +35,51 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 2rem;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: clamp(2rem, 10vw,4rem);
   margin-bottom: 3rem;
 }
 
+input {
+  font-family: 'Pixelify Sans', sans-serif;
+}
+
+button {
+  border: none;
+  background: transparent;
+}
+
+form {
+  margin-bottom: 4rem;
+}
+
 .search-bar {
-  min-width: 200px;
+  min-width: 300px;
   width: 40vw; 
   max-width: 600px;
-
-  /* height: 16px; */
   border: 1px solid var(--search-bar-border);
   border-radius: 16px;
   padding: 8px;
   padding-left: 40px;
   position: relative;
   right: 20px;
-
   margin-bottom: 16px;
+  font-size: 1.125rem;
 }
 .search-button {
-  /* padding: 8px 0 0 0; */
   position: relative;
   left: 20px;
   top: 8px;
   z-index: 1;
 }
-
 .aditional-search-buttons {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  margin-bottom: 24px;
 }
 .aditional-search-buttons input {
   background: var(--search-buttons-bg);
@@ -67,9 +87,6 @@ h1 {
   border-radius: 8px;
   font-size: 1rem;
   padding: 2px 4px;
-}
-input {
-  font-family: 'Pixelify Sans', sans-serif;
 }
 .links-section {
   display: flex;
@@ -80,9 +97,6 @@ input {
 .link-group {
   display: flex;
   flex-direction: column;
-  /* justify-content: start; */
-  /* align-items: start; */
-  /* border: 1px solid var(--link-box-border); */
   padding: 8px;
   width: 200px;
 }
@@ -90,6 +104,7 @@ input {
 .link-group a {
   color: var(--text-color);
   text-decoration: none;
+  font-size: 1.125rem;
 }
 .link-group a:after {
   content: '\f08e';
@@ -107,8 +122,6 @@ input {
 .link-group .link-list {
   display: flex;
   flex-direction: column;
-  /* justify-content: start; */
-  /* align-items: start; */
 }
 
 @media screen and (max-width: 450px) {
@@ -116,18 +129,4 @@ input {
     display: flex;
     flex-direction: column;
   }
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-
-  nav {
-    padding: 28px 30px 0 0;
-  }
-}
-
-button {
-  border: none;
-  background: transparent;
 }
