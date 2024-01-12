@@ -56,6 +56,18 @@ form {
   margin-bottom: 4rem;
 }
 
+#appDropdown {
+  cursor: pointer;  
+  position: relative;
+}
+
+.dropdown {
+  right: 10px;
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+}
+
 .search-bar {
   min-width: 300px;
   width: 40vw; 
