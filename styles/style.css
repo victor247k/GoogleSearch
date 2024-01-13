@@ -62,10 +62,14 @@ form {
 }
 
 .dropdown {
-  right: 10px;
+  display: none;
+  right: -40px;
+  top: 50px;
   position: absolute;
-  display: grid;
   grid-template-columns: 1fr 1fr 1fr; 
+  padding: 8px 10px 4px 4px;
+  border-radius: 15px;
+  border: 1px solid var(--search-bar-border);
 }
 
 .search-bar {
