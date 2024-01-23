@@ -1,0 +1,11 @@
+{% extends "layout.html" %}   
+{% block title %} notGoogle images {% endblock %}
+{% block form %}
+<form action="https://www.google.com/search">
+  <div>
+    <input name="tbm" value="isch" hidden> 
+    <button class="search-button" type="submit">Search</button>
+    <input placeholder="Search..." class="search-bar" type="text" name="q">
+  </div>
+</form>
+{% endblock %}

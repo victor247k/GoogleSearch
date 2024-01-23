@@ -1,22 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Search</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Fonts -->
-  </head>
-  <body>
-    <!--<img id="background" src="./assets/pixelbg.gif" alt="animated background">  -->
-      <form action="https://www.google.com/search">
-        <div>
-          <button class="search-button" type="submit"><img src="./assets/search.png" alt="search icon" width="25" height="25"></button>
-          <input placeholder="Search..." class="search-bar" type="text" name="q">
-        </div>
-        <div class="aditional-search-buttons">
-          <input type="submit" name="btnK" value="Google Search" class="button">
-          <input type="submit" name="btnI" value="I'm Feeling Lucky" class="button">
-        </div>
-      </form>
-  </body>
-</html>
+{% extends "layout.html" %}   
+{% block title %} notGoogle {% endblock %}
+{% block form %}
+<form action="https://www.google.com/search">
+  <div>
+    <button class="search-button" type="submit">Search</button>
+    <input placeholder="Search..." class="search-bar" type="text" name="q">
+  </div>
+  <div class="aditional-search-buttons">
+    <input type="submit" name="btnK" value="Google Search" class="button">
+    <input type="submit" name="btnI" value="I'm Feeling Lucky" class="button">
+  </div>
+</form>
+{% endblock %}

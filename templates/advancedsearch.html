@@ -1,0 +1,100 @@
+{% extends "layout.html" %}   
+{% block title %} Advanced Search {% endblock %}
+{% block form %}
+
+<form>
+  <section>
+    <h2>Find pages with...</h2>
+    <label >
+      all these words:
+      <input type="text" name="" >
+    </label>
+    <label >
+      this exact word or phrase:
+      <input type="text" name="" >
+    </label>
+    <label >
+      any of thes words:
+      <input type="text" name="" >
+    </label>
+    <label >
+      none of these words:
+      <input type="text" name="" >
+    </label>
+    <label >
+      numbers ranging from:
+      <input type="numbers" name="" >
+      to
+      <input type="numbers" name="" >
+    </label>
+  </section>
+  <section>
+    <h2>Then narrow your results by...</h2>
+
+    <label>
+      language: 
+      <select name="">
+        <option selected value="">any language</option> 
+        <option value=""></option>
+         <!-- ... probably with the help of a loop  -->
+      </select>
+    </label>
+
+    <label>
+      region: 
+      <select name="">
+        <option selected value="">any region</option> 
+        <option value=""></option>
+         <!-- ... probably with the help of a loop  -->
+      </select>
+    </label>
+
+    <label>
+      last update: 
+      <select name="">
+        <option selected value="">anytime</option> 
+        <option value=""></option>
+         <!-- ... probably with the help of a loop  -->
+      </select>
+    </label>
+
+    <label>
+      site or domain: 
+      <input type="text" name="" >
+    </label>
+
+    <label>
+      terms appearing: 
+      <select name="">
+        <option selected value="">anywhere in the page</option> 
+        <option value=""></option>
+         <!-- ... probably with the help of a loop  -->
+      </select>
+    </label>
+
+    <label>
+      file type: 
+      <select name="">
+        <option selected value="">any format</option> 
+        <option value=""></option>
+         <!-- ... probably with the help of a loop  -->
+      </select>
+    </label>
+
+    <label>
+      usage rights: 
+      <select name="">
+        <option selected value="">not filtered by licence</option> 
+        <option value=""></option>
+         <!-- ... probably with the help of a loop  -->
+      </select>
+    </label>
+
+  </section>
+
+  <section>
+    <button type="submit">Advanced Search</button> 
+  </section>
+</form>
+
+{% endblock %}
